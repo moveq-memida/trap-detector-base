@@ -1,0 +1,17 @@
+{
+  "description": "ERC-20 approve with unlimited amount",
+  "request": {
+    "mode": "calldata",
+    "data": {
+      "to": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "calldata": "0x095ea7b3000000000000000000000000def1c0ded9bec7f1a1670819833240f027b25effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "lang": "ja"
+  },
+  "expectedRisks": ["UNLIMITED_APPROVAL"],
+  "notes": {
+    "function": "approve(address spender, uint256 amount)",
+    "spender": "0xDef1C0ded9bec7F1a1670819833240f027b25EfF (0x Exchange)",
+    "amount": "max uint256 (unlimited)"
+  }
+}

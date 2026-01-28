@@ -1,0 +1,18 @@
+{
+  "description": "ERC-721 setApprovalForAll with approved=true",
+  "request": {
+    "mode": "calldata",
+    "data": {
+      "to": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+      "calldata": "0xa22cb46500000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "lang": "ja"
+  },
+  "expectedRisks": ["APPROVAL_FOR_ALL_TRUE", "EOA_SPENDER"],
+  "notes": {
+    "function": "setApprovalForAll(address operator, bool approved)",
+    "nftContract": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D (BAYC)",
+    "operator": "0x0000000000000000000000000000000000000001",
+    "approved": true
+  }
+}

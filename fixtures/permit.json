@@ -1,0 +1,47 @@
+{
+  "description": "EIP-2612 Permit with unlimited value",
+  "request": {
+    "mode": "typedData",
+    "data": {
+      "typedData": {
+        "types": {
+          "EIP712Domain": [
+            { "name": "name", "type": "string" },
+            { "name": "version", "type": "string" },
+            { "name": "chainId", "type": "uint256" },
+            { "name": "verifyingContract", "type": "address" }
+          ],
+          "Permit": [
+            { "name": "owner", "type": "address" },
+            { "name": "spender", "type": "address" },
+            { "name": "value", "type": "uint256" },
+            { "name": "nonce", "type": "uint256" },
+            { "name": "deadline", "type": "uint256" }
+          ]
+        },
+        "primaryType": "Permit",
+        "domain": {
+          "name": "USD Coin",
+          "version": "2",
+          "chainId": 8453,
+          "verifyingContract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+        },
+        "message": {
+          "owner": "0x1234567890123456789012345678901234567890",
+          "spender": "0xabcdefabcdefabcdefabcdefabcdefabcdefabcd",
+          "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "nonce": "0",
+          "deadline": "1735689600"
+        }
+      }
+    },
+    "lang": "ja"
+  },
+  "expectedRisks": ["UNLIMITED_APPROVAL"],
+  "notes": {
+    "type": "EIP-2612 Permit",
+    "token": "USDC on Base",
+    "value": "max uint256 (unlimited)",
+    "chainId": 8453
+  }
+}
