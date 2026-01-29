@@ -354,7 +354,20 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="footer">
-          <p className="footer-text">
+          <a
+            href="https://orynth.dev/projects/trap-detector"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-badge"
+          >
+            <img
+              src="https://orynth.dev/api/badge/trap-detector?theme=dark&style=minimal"
+              alt="Featured on Orynth"
+              width="180"
+              height="48"
+            />
+          </a>
+          <p className="footer-text" style={{ marginTop: '20px' }}>
             {'[ '}<span className="footer-highlight">TRAP_DETECTOR</span>{' ]'} — BUILT FOR <span className="footer-highlight">BASE</span>
           </p>
           <p className="footer-text footer-text-dim" style={{ marginTop: '10px' }}>
